@@ -1,0 +1,59 @@
+# Observability Stack - Data and Runtime Files
+# These directories contain runtime data and should not be committed
+
+# Tempo data directory - contains traces, WAL, and generated metrics
+tempo-data/
+
+# Docker volumes and data directories
+grafana-data/
+loki-data/
+prometheus-data/
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files (if you add them later)
+.env
+.env.local
+.env.*.local
+
+# Docker specific
+.dockerignore
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Runtime and cache directories
+.cache/
+.tmp/
+
+# Any additional data directories that might be created
+data/
+storage/
+wal/
+blocks/ 
